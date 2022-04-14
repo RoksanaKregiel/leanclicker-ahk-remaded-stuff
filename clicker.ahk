@@ -1,6 +1,8 @@
-﻿Hotkey, *LButton, Toggle
+Hotkey, *LButton, Toggle
 Hotkey, *RButton, Toggle
-SoundPlay, %F1%
+MsgBox , 0x40, Made By, kubaminecraftpl#5948
+Gui, +Border
+Gui, -Resize
 Gui, Add, Tab, x2 y-1 w297 h225 , Home|Left|Right|Binds|Other|Configs
 Gui, Color, Black ;gui color
 Gui, Tab, Home ;gui tab
@@ -13,7 +15,7 @@ Gui, Font, cWhite
 Gui, Add, Text, x65 y110 w200 h40 , best, free clicker for mc
 Gui, Font, S10 CDefault, Helvetica ;specifies what type of font is it
 Gui, Font, cWhite
-Gui, Add, Text, x5 y205 w210 h17 , Version: 2.0 -Beta ;add text about version down of the gui
+Gui, Add, Text, x5 y205 w210 h17 , Version: 2.5 -Beta ;add text about version down of the gui
 Gui, Font, cWhite
 Gui, Tab, Left ;gui tab
 Gui, Add, Text, x10 y35 w277 h20 , Min. Delay (ms) ;adds text how to use it
@@ -34,18 +36,19 @@ Gui, Add, Text, x12 y29 w220 h30 , Left Clicker Toggle: P ;adds text how to use 
 Gui, Add, Text, x12 y49 w250 h30 , Left Clicker usage: hold LMB ;adds text how to use it
 Gui, Add, Text, x12 y69 w220 h30 , Rightclicker: L ;adds text how to use it
 Gui, Add, Text, x12 y89 w220 h30 , Rightclicker usage: Hold RMB ;adds text how to use it
-Gui, Add, Text, x12 y140 w330 h30 ,Blockhit Bind: LAlt
+Gui, Add, Text, x12 y130 w330 h30 ,Blockhit Bind: LAlt
 Gui, Add, Text, x12 y160 w330 h30 , Suspend key: Insert
+Gui, Add, Text, x12 y170 w330 h30, panic key: PgUp
+Gui, Add, Text, x12 y150 w330 h30, Hide GUI : F7
+Gui, Add, Text, x12 y180 w330 h30, Show GUI : F8
 Gui, Tab, Other ;gui tab
 Gui, Add, Text, cBlue gdsc, discord ;reffer to line 84
 Gui, Add, Text, cBlue gGithub, github ;reffer to line 88
-Gui, Show, x50 y50 h225 w300, leanclicker.wtf v1.0 ;gui name, and size
+Gui, Show, x50 y50 h220 w300, leanclicker.wtf v1.0 ;gui name, and size
 Gui, Font, S9, CWhite, Helvetica
-Gui, Add, Text, x12 y140 w330 h30, randomisation:
-Gui, Add, Button, x20 y160 w33 h30 gLegitRandomisationButton, legit  
 Gui, Tab, Configs
 Gui, Font, cWhite
-Gui, Add, Text, x12 y35 h225 w300, SOON
+Gui, Add, Text, x12 y35 h250 w300, SOON
 Gui, Submit, NoHide
 Return
  
@@ -102,20 +105,22 @@ run https://discord.gg/kVGwzz3J2h ;reffer to my discord server
 return
 
 Github:
-run https://github.com/RoksanaKregiel/leanclickerwtf-ahk-source ;reffer to clicker github source
+run https://github.com/RoksanaKregiel/leanclicker-ahk-remaded-stuff ;reffer to clicker github source
 return
 
 Blockhit:
 LAlt:: RButton
 
-LegitRandomisationButton:
-MsgBox, loaded legit randomisation
-; code it ur self
+Hide:
+F7:: Gui, Hide
+
+Show:
+F8:: Gui, Show
 
 
 Insert::Suspend ; stops the script
 
 GuiClose:
-
 ExitApp
 
+PgUp::ExitApp
