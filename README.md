@@ -14,3 +14,8 @@ cuz it's due to ahk
 
 u can do anything with it
 but u can't use it for commercial purposes
+
+
+
+
+If you have any ideas what i can open pull requests
