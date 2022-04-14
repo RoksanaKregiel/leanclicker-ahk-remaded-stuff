@@ -1,6 +1,7 @@
 # leanclicker-ahk-remaded-stuff
 i removed old repo cuz remaded stuff
 
+
 official discord server: https://discord.gg/DTafnTkcYZ
 
 best free clicker in the world?
@@ -14,8 +15,8 @@ cuz it's due to ahk
 
 u can do anything with it
 but u can't use it for commercial purposes
-
-
-
-
 If you have any ideas what i can open pull requests
+
+
+# showcase
+https://youtu.be/2csTjK7c6Z4
