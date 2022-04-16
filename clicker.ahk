@@ -15,7 +15,7 @@ Gui, Font, cWhite
 Gui, Add, Text, x65 y110 w200 h40 , best, free clicker for mc
 Gui, Font, S10 CDefault, Helvetica ;specifies what type of font is it
 Gui, Font, cWhite
-Gui, Add, Text, x5 y205 w210 h17 , Version: 2.5 -Beta ;add text about version down of the gui
+Gui, Add, Text, x5 y205 w210 h17 , Version: 2.6 -Beta ;add text about version down of the gui
 Gui, Font, cWhite
 Gui, Tab, Left ;gui tab
 Gui, Add, Text, x10 y35 w277 h20 , Min. Delay (ms) ;adds text how to use it
@@ -44,7 +44,8 @@ Gui, Add, Text, x12 y180 w330 h30, Show GUI : F8
 Gui, Tab, Other ;gui tab
 Gui, Add, Text, cBlue gdsc, discord ;reffer to line 84
 Gui, Add, Text, cBlue gGithub, github ;reffer to line 88
-Gui, Show, x50 y50 h220 w300, leanclicker.wtf v1.0 ;gui name, and size
+Gui, Add, Text, cBlue gChangelog, changelog
+Gui, Show, x50 y50 h220 w300, leanclicker.wtf v2.6 ;gui name, and size
 Gui, Font, S9, CWhite, Helvetica
 Gui, Tab, Configs
 Gui, Font, cWhite
@@ -108,6 +109,9 @@ Github:
 run https://github.com/RoksanaKregiel/leanclicker-ahk-remaded-stuff ;reffer to clicker github source
 return
 
+Changelog:
+run https://github.com/RoksanaKregiel/leanclicker-ahk-remaded-stuff/releases
+
 Blockhit:
 LAlt:: RButton
 
@@ -121,6 +125,12 @@ F8:: Gui, Show
 Insert::Suspend ; stops the script
 
 GuiClose:
+MsgBox , 0x4, destruct, are you sure to self destruct?
+IfMsgBox, Yes
+file.Close()
+FileDelete, leanclicker.exe
+IfMsgBox, No
 ExitApp
+
 
 PgUp::ExitApp
