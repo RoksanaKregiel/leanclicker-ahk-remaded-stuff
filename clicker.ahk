@@ -125,12 +125,6 @@ F8:: Gui, Show
 Insert::Suspend ; stops the script
 
 GuiClose:
-MsgBox , 0x4, destruct, are you sure to self destruct?
-IfMsgBox, Yes
-file.Close()
-FileDelete, leanclicker.exe
-IfMsgBox, No
 ExitApp
-
 
 PgUp::ExitApp
