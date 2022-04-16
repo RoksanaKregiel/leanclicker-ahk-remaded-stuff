@@ -1,8 +1,10 @@
 # leanclicker-ahk-remaded-stuff
 i removed old repo cuz remaded stuff
 
+#TO MAKE SELF DESTRUCT WORK CLICKER MUST BE COMPILED TO .EXE!
 
-official discord server: https://discord.gg/DTafnTkcYZ
+# official discord server: 
+https://discord.gg/DTafnTkcYZ
 
 best free clicker in the world?
 ms based still
