@@ -1,7 +1,7 @@
 # leanclicker-ahk-remaded-stuff
 i removed old repo cuz remaded stuff
 
-#TO MAKE SELF DESTRUCT WORK CLICKER MUST BE COMPILED TO .EXE!
+# if u found some issues dm me: kubaminecraftpl#5948
 
 # official discord server: 
 https://discord.gg/DTafnTkcYZ
