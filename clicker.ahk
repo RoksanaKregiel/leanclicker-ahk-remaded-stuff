@@ -102,7 +102,7 @@ Sleep %delay%
 return
  
 Dsc:
-run https://discord.gg/kVGwzz3J2h ;reffer to my discord server 
+run https://discord.gg/vzmfxyvdpd
 return
 
 Github:
