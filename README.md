@@ -4,7 +4,7 @@ i removed old repo cuz remaded stuff
 # if u found some issues dm me: kubaminecraftpl#5948
 
 # official discord server: 
-https://discord.gg/DTafnTkcYZ
+https://discord.gg/vzmfxyvdpd
 
 best free clicker in the world?
 ms based still
@@ -22,3 +22,6 @@ If you have any ideas what i can open pull requests
 
 # showcase
 https://youtu.be/2csTjK7c6Z4
+
+best shit i've ever coded lol
+soon jitter + click sounds 
