@@ -15,7 +15,7 @@ Gui, Font, cWhite
 Gui, Add, Text, x65 y110 w200 h40 , best, free clicker for mc
 Gui, Font, S10 CDefault, Helvetica ;specifies what type of font is it
 Gui, Font, cWhite
-Gui, Add, Text, x5 y205 w210 h17 , Version: 2.6 -Beta ;add text about version down of the gui
+Gui, Add, Text, x5 y205 w210 h17 , Version: 2.7 -Beta ;add text about version down of the gui
 Gui, Font, cWhite
 Gui, Tab, Left ;gui tab
 Gui, Add, Text, x10 y35 w277 h20 , Min. Delay (ms) ;adds text how to use it
@@ -32,11 +32,12 @@ Gui, Font, S9, CWhite, Helvetica
 Gui, Add, Text, x10 y89 w277 h20 , Max. Delay (ms)  ;adds text how to use it
 Gui, Add, Slider, x10 y109 w277 h30 vMaxBuild gMaxBuild ToolTip Range0-500, 62 ;adds a slider 
 Gui, Tab, Binds ;gui tab
-Gui, Add, Text, x12 y29 w220 h30 , Left Clicker Toggle: P ;adds text how to use it
+Gui, Add, Text, x5 y29 w220 h30 , Left Clicker Toggle: P ;adds text how to use it
 Gui, Add, Text, x12 y49 w250 h30 , Left Clicker usage: hold LMB ;adds text how to use it
-Gui, Add, Text, x12 y69 w220 h30 , Rightclicker: L ;adds text how to use it
+Gui, Add, Text, x5 y115 w100 h15 , ThrowPotion: V
+Gui, Add, Text, x12 y69 w220 h15 , Rightclicker: L ;adds text how to use it
 Gui, Add, Text, x12 y89 w220 h30 , Rightclicker usage: Hold RMB ;adds text how to use it
-Gui, Add, Text, x12 y130 w330 h30 ,Blockhit Bind: LAlt
+Gui, Add, Text, x12 y130 w330 h15 ,Blockhit Bind: LAlt
 Gui, Add, Text, x12 y160 w330 h30 , Suspend key: Insert
 Gui, Add, Text, x12 y170 w330 h30, panic key: PgUp
 Gui, Add, Text, x12 y150 w330 h30, Hide GUI : F7
@@ -45,7 +46,7 @@ Gui, Tab, Other ;gui tab
 Gui, Add, Text, cBlue gdsc, discord ;reffer to line 84
 Gui, Add, Text, cBlue gGithub, github ;reffer to line 88
 Gui, Add, Text, cBlue gChangelog, changelog
-Gui, Show, x50 y50 h220 w300, leanclicker.wtf v2.6 ;gui name, and size
+Gui, Show, x50 y50 h220 w300, leanclicker.wtf v2.7 ;gui name, and size
 Gui, Font, S9, CWhite, Helvetica
 Gui, Tab, Configs
 Gui, Font, cWhite
@@ -121,6 +122,18 @@ F7:: Gui, Hide
 Show:
 F8:: Gui, Show
 
+;Autopotion
+
+~$*v::
+ pokey++
+ if (pokey >= 3)
+    Send, %pokey%{RButton}
+ if (pokey = 8)
+    pokey :=2
+return
+~$*e::pokey := 2
+
+~$*x::Hotkey, $*v, Toggle ;Toggles the autopotion by pressing V key
 
 Insert::Suspend ; stops the script
 
