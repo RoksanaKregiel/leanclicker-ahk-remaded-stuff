@@ -6,8 +6,14 @@ i removed old repo cuz remaded stuff
 # official discord server: 
 https://discord.gg/vzmfxyvdpd
 
-best free clicker in the world?
-ms based still
+# features
+- throwpot
+- blockhit
+- autoclicker ( ms based )
+- consitant updates
+- free and open source
+
+best free clicker rn
 
 gui:  ![image](https://user-images.githubusercontent.com/76454142/162644892-1105c10e-2ec9-41e8-b491-b09dc2fdf58e.png)
 
